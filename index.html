@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Which Hand Holds the Coin?</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>Which Hand Holds the Coin?</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="hands">
+                <div class="hand">
+                    <img id="hand-1" src="/assets/hand.png" />
+                    <div class="coin">
+                    <img src="/assets/coin.jpeg"
+                    />
+                    <button id="button-1">Right</button>
+                </div>
+                <div class="hand">
+                    <img id="hand-2" src="/assets/hand.png" />
+                    <div class="coin"></div>
+                    <button id="button-2">Other Right</button>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stat">Correct: <span id="correct">0</span></div>
+                <div class="stat">Incorrect: <span id="incorrect">0</span></div>
+                <div class="stat">Total: <span id="total">0</span></div>
+            </section>
+        </main>
+    </body>
 </html>
