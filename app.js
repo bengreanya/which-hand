@@ -54,7 +54,7 @@ function displayResults() {
     totalEl.textContent = total;
 }
 resetButton.addEventListener('click', () => {
-    console.log('somethinghere');
+    // console.log('somethinghere');
     correct = 0;
     total = 0;
     resetHands();
