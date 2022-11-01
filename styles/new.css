@@ -1,0 +1,20 @@
+.hands {
+    display: flex;
+    flex-direction: column;
+}
+.hand {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 20px;
+}
+.stat {
+    display: row;
+    align-items: center;
+}
+
+.coin {
+    max-width: 5px;
+}
