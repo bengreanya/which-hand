@@ -7,6 +7,7 @@ const lossesEl = document.getElementById('incorrect');
 const totalEl = document.getElementById('total');
 const coin1 = document.querySelector('#coin-1');
 const coin2 = document.querySelector('#coin-2');
+const resetButton = document.getElementById('reset');
 
 /* State */
 let correct = 0;
@@ -52,3 +53,10 @@ function displayResults() {
     lossesEl.textContent = total - correct;
     totalEl.textContent = total;
 }
+resetButton.addEventListener('click', () => {
+    console.log('somethinghere');
+    correct = 0;
+    total = 0;
+    resetHands();
+    displayResults();
+});
